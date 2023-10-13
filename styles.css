@@ -12,7 +12,8 @@ html {
 body {
     background-color: var(--light-color);
     margin: 0%;
-    padding: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .menu-bar {
@@ -21,6 +22,12 @@ body {
     justify-content: space-between;
     flex-direction: row;
     background-color: var(--light-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -10px;
+    border-bottom: 0.1px solid black;
 }
 
 #menu-bar-heading {
@@ -29,19 +36,20 @@ body {
 }
 
 #menu-bar-heading h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Times, serif;
     font-weight: bolder;
     font-size: 72px;
-    color: black;
+    color: orangered;
     margin: 5px;
 }
 
 #menu-bar-heading h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: serif;
     font-weight: lighter;
     font-size: 16px;
     color: black;
-    margin: 30px;
+    margin: 5px;
+    color: black;
 }
 
 #nav-bar {
@@ -65,13 +73,12 @@ body {
     /* border: 2px dotted black; */
     background-color: var(--light-color);
     padding: 20px;
-
 }
 
 #blog-section-img1 {
     display: grid;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     /* border: 2px dotted black; */
@@ -79,16 +86,19 @@ body {
 
 #blog-section-quote {
     display: grid;
-    grid-column-start: 3;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* border: 2px dotted black; */
-    font-size: 70px;
-    text-align: center;
+    font-size: 80px;
+    text-align: left;
     font-style: italic;
+    font-weight: lighter;
     font-family: sans-serif;
-    align-items: center;
+    align-items: space-between;
+    /* border: 0.1px solid black; */
 }
 
 #blog-section-posts {
@@ -98,19 +108,19 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
     /* border: 2px dotted black; */
+    width: 100%;
+    height: 100%;
 }
 
 
 #blog-section-posts h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    font-size: 36px;
-    color: black;
+    font-size: 66px;
+    color: var(--deepest-color);
     text-align: center;
     justify-content: flex-end;
-    border: 1px dotted var(--deepest-color);
-    border-width: 5px;
-    /* border: 2px dotted black; */
+    border-top: 0.1px solid black;
 }
 
 #post1 {
@@ -122,6 +132,48 @@ body {
     font-weight: lighter;
     font-size: 20px;
     color: black;
+    /* border: 1px solid var(--deepest-color); */
+}
+
+#post1-img {
+    /* border: 1px solid var(--deepest-color); */
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#post1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 50px;
+    /* border: 2px dotted black; */
+    width: 100%;
+    height: 100%
+}
+
+.post-headers {
+    font-size: smaller;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 2px dotted black; */
+
+}
+
+.post-titles {
+    font-size: larger;
+}
+
+.post-summary {
+    font-size: medium;
+}
+
+.post-comments {
+    font-size: smaller;
+    border-top: 0.1px solid black;
+    padding-top: 15px;
 }
 
 #post2 {
@@ -135,6 +187,28 @@ body {
     color: black;
 }
 
+#post2-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-content: center;
+    text-align: right;
+    padding-left: 50px;
+    /* border: 2px dotted black; */
+    width: 100%;
+    height: 100%;
+}
+
+#post2-img {
+    /* border: 1px solid var(--deepest-color); */
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
 #post3 {
     display: flex;
     justify-content: space-between;
@@ -143,4 +217,26 @@ body {
     font-weight: lighter;
     font-size: 20px;
     color: black;
+}
+
+#post3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding-right: 50px;
+    /* border: 2px dotted black; */
+    width: 100%;
+    height: 100%;
+}
+
+#post3-img {
+    /* border: 1px solid var(--deepest-color); */
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
 }
